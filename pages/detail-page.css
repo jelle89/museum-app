@@ -1,0 +1,16 @@
+
+section {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    background: blue;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+html {
+    color: -internal-root-color;
+}
