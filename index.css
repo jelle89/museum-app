@@ -1,34 +1,61 @@
-body {
-    margin: 0;
-    padding: 2rem 0;
-    width: 100%;
-    background: blue;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+html {
 
+    background: url("https://images.pexels.com/photos/1455993/pexels-photo-1455993.jpeg") repeat fixed 100%;
 }
-
 main {
-    background: white;
+    
     width: 90%;
     margin: auto;
     border-radius: 5px;
     padding: 2rem 0;
   }
 
+  body {
+    width: 80%;
+    margin: 25px auto;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid black;
+    
+  }
+
   h1 {
     margin: 3rem 1rem 6rem 1rem;
+    padding:20 px;
+    text-align:center;
 }
+
+h2 {
+    padding:5 px;
+    text-align: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .artObject {
-    max-width: 75%;
-    max-height: 20rem;
-    margin: 1rem;
+
+    background: blue;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    
 }
 
-#gallery {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
+footer {
+    text-align:center;
 }
