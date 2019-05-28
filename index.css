@@ -12,7 +12,7 @@ main {
 
   body {
     width: 80%;
-    margin: 25px auto;
+    margin: 80px auto;
     background-color: white;
     padding: 20px;
     border: 5px solid black;
@@ -30,30 +30,61 @@ h2 {
     text-align: center;
 }
 
-a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-.container {
-    padding: 0;
+ul, a {
+  padding: 0;
+  margin: 0;
+}
+.top {
+    padding: 20px;
     margin: 0;
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
+    background-color: lightblue;
+    text-align: left;
   }
 
-.artObject {
+  .middle {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: yellow;
+    text-align: left;
+  }
+
+  .bottom {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: pink;
+    text-align: center;
+    font-size: 12px;
+   
+  }
+
+  span {
+    float: right;
+  }
+
+.artObject{
 
     background: blue;
     padding: 5px;
-    width: 200px;
-    height: 150px;
+    max-width: 40%;
+    max-height: 150px;
     margin: 10px;
+    transition: 1s;
     
+}
+.artObject:hover {
+  transform: rotate(360deg);
 }
 
 footer {
