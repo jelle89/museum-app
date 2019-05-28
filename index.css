@@ -19,6 +19,57 @@ main {
     
   }
 
+  @media (max-width: 1100px) {
+    body {
+      background-color: red;
+      width: 40%;
+
+    }
+    .top {
+      padding: 20px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background-color: lightblue;
+      text-align: center;
+      font-size: 12px;
+      flex-flow: row wrap; 
+      flex-direction: column;
+    }
+  
+    .middle {
+      padding: 20px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background-color: yellow;
+      text-align: center;
+      font-size: 12px;
+      flex-flow: row wrap; 
+      flex-direction: column;
+    }
+  
+    .bottom {
+      padding: 20px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background-color: pink;
+      text-align: center;
+      font-size: 12px;
+      flex-flow: row wrap; 
+      flex-direction: column;
+     
+    }
+
+  }
+
   h1 {
     margin: 3rem 1rem 6rem 1rem;
     padding:20 px;
@@ -30,10 +81,11 @@ h2 {
     text-align: center;
 }
 
-ul, a {
+ul, a, div, p {
   padding: 0;
   margin: 0;
 }
+
 .top {
     padding: 20px;
     margin: 0;
@@ -43,6 +95,8 @@ ul, a {
     justify-content: center;
     background-color: lightblue;
     text-align: left;
+    flex-flow: row wrap; 
+   
   }
 
   .middle {
@@ -54,6 +108,9 @@ ul, a {
     justify-content: center;
     background-color: yellow;
     text-align: left;
+    flex-flow: row wrap; 
+    text-align: center;
+    font-size: 12px;
   }
 
   .bottom {
@@ -64,6 +121,8 @@ ul, a {
     align-items: stretch;
     justify-content: center;
     background-color: pink;
+    text-align: left;
+    flex-flow: row wrap;
     text-align: center;
     font-size: 12px;
    
@@ -81,7 +140,6 @@ ul, a {
     max-height: 150px;
     margin: 10px;
     transition: 1s;
-    
 }
 .artObject:hover {
   transform: rotate(360deg);
