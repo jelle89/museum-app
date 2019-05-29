@@ -1,5 +1,44 @@
+function doesNotPassAllValidations(name, msg) {
+    //checks whether the name or message box is empty and displays an error message
+
+    if (!name && !msg) {
+        alert('You forgot to enter your name and a message!')
+        return true
+    }
+
+    if (!name) {
+        alert('You forgot to enter your name')
+        return true
+    }
+
+    if (!msg) {
+        alert('You forgot to enter a message!')
+        return true
+    }
+
+    var firstLetter = name.charAt(0);
+    var uppercaseFirstLetter = name.charAt(0).toUpperCase();
+    var stringWithoutFirstLetter = name.slice(1)
+    function bladibla(name){
+
+        return bladibla.charAt(0).toUpperCase() + bladibla.slice(1);
+    }
+
+
+
+    //checkes whether the message is too long and displays an error message
+    if (msg.length > 280) {
+        alert('Your message is too long!')
+        return true
+    }
+
+return false 
+}
+
+
 // add event handler
 function submitComment() {
+
     // gather data
     const inputField = document.getElementById('name')
     const name = inputField.value
@@ -24,5 +63,10 @@ function submitComment() {
   
     // reset form values
     inputField.value = null
-    textArea.value = null
-  }
+    textArea.value = null 
+    
+
+    if(doesNotPassAllValidations(name, msg)){
+        return
+    }
+}
