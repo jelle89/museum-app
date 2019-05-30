@@ -19,9 +19,7 @@ function doesNotPassAllValidations(name, msg) {
     var firstLetter = name.charAt(0);
     var uppercaseFirstLetter = name.charAt(0).toUpperCase();
     var stringWithoutFirstLetter = name.slice(1)
-    function bladibla(name){
-
-        return bladibla.charAt(0).toUpperCase() + bladibla.slice(1);
+    name = name.charAt(0).toUpperCase() + name.slice(1);
     }
 
 

@@ -10,7 +10,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-
+h3{
+    border: 2px black solid;
+}
 html {
     color: -internal-root-color;
 }
